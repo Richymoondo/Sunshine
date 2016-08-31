@@ -1,4 +1,4 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,47 +9,9 @@
     tools:context="com.example.admin.sunshine_version_3.MainActivityFragment"
     tools:showIn="@layout/activity_main">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Today, June 24"
-        android:id="@+id/textView2" />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listview_forecast"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="21°"
-        android:id="@+id/textView"
-        android:layout_marginTop="25dp"
-        android:layout_below="@+id/textView2"
-        android:layout_alignEnd="@+id/textView2"
-        android:layout_marginEnd="30dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="8°"
-        android:id="@+id/textView3"
-        android:layout_below="@+id/textView"
-        android:layout_alignStart="@+id/textView" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageView"
-        android:layout_marginStart="60dp"
-        android:src="@android:mipmap/sym_def_app_icon"
-        android:layout_alignTop="@+id/textView2"
-        android:layout_toEndOf="@+id/textView2" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Cloudy"
-        android:id="@+id/textView4"
-        android:layout_below="@+id/imageView"
-        android:layout_alignStart="@+id/imageView" />
-
-</RelativeLayout>
+</FrameLayout>
