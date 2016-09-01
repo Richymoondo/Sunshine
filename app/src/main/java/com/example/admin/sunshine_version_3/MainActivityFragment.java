@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 
 /**
  * A placeholder fragment containing a simple view.
@@ -27,6 +28,12 @@ public class MainActivityFragment extends Fragment {
                 "Saturday - Hail - 88/63",
                 "Sunday - Snow Storm :'( - 88/63"
         };
+
+        new ArrayAdapter<String>(
+                getActivity(),
+                R.layout.list_item_forecast,
+                R.id.list_item_forecast_textview,
+                forecastArray);
 
         return inflater.inflate(R.layout.fragment_main, container, false);
     }
